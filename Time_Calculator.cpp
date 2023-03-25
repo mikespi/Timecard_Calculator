@@ -21,6 +21,7 @@ void printOutput(std::vector<int> input)
         }
     }
 }
+
 /**
  * Filters digits out of string and puts in a vector
 */
@@ -48,24 +49,6 @@ std::vector<int> stringToVector(std::string short_text)
 
     return daily_time;
 }
-
-
-/**
- * Applies rules of maxiflex 2.0
-*/
-// bool maxiflex(std::vector<int> daily_time) 
-// {
-//     switch (expression)
-//     {
-//     case /* constant-expression */:
-//         /* code */
-//         break;
-    
-//     default:
-//         break;
-//     }
-//     return 0;
-// }
 
 int main()
 {
