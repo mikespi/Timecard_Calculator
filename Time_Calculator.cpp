@@ -50,6 +50,20 @@ std::vector<int> stringToVector(std::string short_text)
     return daily_time;
 }
 
+/**
+ * Apply Maxiflex rules to hours
+*/
+bool maxiflex(std::vector<int> int_vector_hours)
+{
+    bool rule_breaker = false;
+    if (int_vector_hours[0] < 600)
+        rule_breaker = true;
+    if (int_vector_hours[3] > 2000)
+        rule_breaker = true;
+    
+    return rule_breaker;
+}
+
 int main()
 {
     std::vector<int> int_vector_hours;
